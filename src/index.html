@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleGram</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row"></div>
+    </div>
+    <div class="modal">
+        <button class="modal__close btn-transparent"><span class="icon-cross"></span></button>
+        <div class="modal__inner">
+            <div class="photo">
+                <img src="" alt="Photo" class="photo__img" />
+                <div class="photo__controls">
+                    <button class="photo__like btn-transparent">
+                        <span class="icon-thumbs-up"></span>
+                    </button>
+                    <span class="photo__likes-qty"></span><span> like(s)</span>
+                </div>
+            </div>
+        </div>
+        <div class="photo__buttons">
+            <button id="prev-photo">Prev</button>
+            <button id="next-photo">Next</button>
+        </div>        
+    </div>
+    <script id="list-item-template" type="text/template">
+        <div class="photo">
+            <img src="{{imageURL}}" alt="Photo" class="photo__img" />
+            <div class="photo__controls"></div>
+        </div>
+    </script>
+    <script id="likes-block-template" type="text-template">
+        <button class="photo__like btn-transparent">
+            <span class="icon-thumbs-up"></span>
+        </button>
+        <span class="photo__likes-qty"></span><span> like(s)</span>
+    </script>
+</body>
+
+</html>

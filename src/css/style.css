@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?hhcftl');
+  src:  url('../fonts/icomoon.eot?hhcftl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hhcftl') format('truetype'),
+    url('../fonts/icomoon.woff?hhcftl') format('woff'),
+    url('../fonts/icomoon.svg?hhcftl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  pointer-events: none;
+}
+
+.icon-thumbs-up:before {
+  content: "\e902";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  padding: 0 15px;
+}
+
+.col {
+  width: 33.33%;
+  text-align: center;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+
+.col--wide {
+    width: 100%;
+}
+
+.btn-transparent {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #666666;
+}
+
+.photo {
+  position: relative;
+  background-color: #f6f6f6;
+  border: 2px solid #cdcdcd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__inner .photo {
+  border: none;
+  background: none;
+}
+
+.photo__img {
+  border: 1px solid #666666;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.photo__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo__buttons button:first-child {
+    margin-right: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 550px;
+  max-height: 55%;
+  padding: 55px 20px 20px;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 3px 0 0 #666666;
+}
+
+.modal--opened {
+  display: block;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+}
